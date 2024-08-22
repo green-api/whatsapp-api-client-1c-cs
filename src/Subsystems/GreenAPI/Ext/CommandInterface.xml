@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<CommandsVisibility>
+		<Command name="InformationRegister.ГринАПИ_ПараметрыПодключения.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.ГринАПИ_ПользователиWhatsApp.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.ГринАПИ_Контакты.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="InformationRegister.ГринАПИ_ПараметрыПодключения.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ГринАПИ_Параметры</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.ГринАПИ_ПользователиWhatsApp.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ГринАПИ_Справочники</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.ГринАПИ_Контакты.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ГринАПИ_Справочники</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="InformationRegister.ГринАПИ_ПараметрыПодключения.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ГринАПИ_Параметры</CommandGroup>
+		</Command>
+		<Command name="Catalog.ГринАПИ_ПользователиWhatsApp.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ГринАПИ_Справочники</CommandGroup>
+		</Command>
+		<Command name="Catalog.ГринАПИ_Контакты.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ГринАПИ_Справочники</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>CommandGroup.ГринАПИ_Чат</Group>
+		<Group>CommandGroup.ГринАПИ_Параметры</Group>
+		<Group>CommandGroup.ГринАПИ_Справочники</Group>
+	</GroupsOrder>
+</CommandInterface>
