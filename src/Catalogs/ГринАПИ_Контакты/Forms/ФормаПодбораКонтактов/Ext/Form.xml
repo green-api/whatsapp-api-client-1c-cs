@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
-	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<Group>Vertical</Group>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
 		<ChildItems>
@@ -9,6 +10,7 @@
 				<Type>CommandBarButton</Type>
 				<DefaultButton>true</DefaultButton>
 				<CommandName>Form.Command.Добавить</CommandName>
+				<ButtonImportance>Main</ButtonImportance>
 				<ExtendedTooltip name="ДобавитьРасширеннаяПодсказка" id="33"/>
 			</Button>
 			<Button name="ФормаОтмена" id="34">
@@ -44,6 +46,7 @@
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ПользовательWhatsAppКонтекстноеМеню" id="37"/>
 					<ExtendedTooltip name="ПользовательWhatsAppРасширеннаяПодсказка" id="38"/>
+					<SelectedItemsActionsPanel name="ПользовательWhatsAppПанельДействийВыделенныхСтрок" id="43"/>
 				</InputField>
 				<Button name="ЗагрузитьКонтакты" id="41">
 					<Type>UsualButton</Type>
@@ -58,6 +61,8 @@
 		<Table name="Контакты" id="1">
 			<Representation>List</Representation>
 			<ChangeRowSet>false</ChangeRowSet>
+			<RowSelectionMode>Cell</RowSelectionMode>
+			<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
 			<EnableStartDrag>true</EnableStartDrag>
 			<EnableDrag>true</EnableDrag>
@@ -129,25 +134,31 @@
 				<ContextMenu name="КонтактыУправлениеПоискомКонтекстноеМеню" id="12"/>
 				<ExtendedTooltip name="КонтактыУправлениеПоискомРасширеннаяПодсказка" id="13"/>
 			</SearchControlAddition>
+			<SelectedItemsActionsPanel name="КонтактыПанельДействийВыделенныхСтрок" id="44"/>
 			<ChildItems>
 				<CheckBoxField name="КонтактыФлаг" id="23">
 					<DataPath>Контакты.Флаг</DataPath>
 					<TitleLocation>None</TitleLocation>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="КонтактыФлагКонтекстноеМеню" id="24"/>
 					<ExtendedTooltip name="КонтактыФлагРасширеннаяПодсказка" id="25"/>
+					<SelectedItemsActionsPanel name="КонтактыФлагПанельДействийВыделенныхСтрок" id="45"/>
 				</CheckBoxField>
 				<InputField name="КонтактыФИО" id="17">
 					<DataPath>Контакты.Наименование</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="КонтактыФИОКонтекстноеМеню" id="18"/>
 					<ExtendedTooltip name="КонтактыФИОРасширеннаяПодсказка" id="19"/>
+					<SelectedItemsActionsPanel name="КонтактыФИОПанельДействийВыделенныхСтрок" id="46"/>
 				</InputField>
 				<InputField name="КонтактыНомерТелефона" id="20">
 					<DataPath>Контакты.НомерТелефона</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<Mask>9 (999) 999 99 99</Mask>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<Format>
@@ -164,6 +175,7 @@
 					</EditFormat>
 					<ContextMenu name="КонтактыНомерТелефонаКонтекстноеМеню" id="21"/>
 					<ExtendedTooltip name="КонтактыНомерТелефонаРасширеннаяПодсказка" id="22"/>
+					<SelectedItemsActionsPanel name="КонтактыНомерТелефонаПанельДействийВыделенныхСтрок" id="47"/>
 				</InputField>
 			</ChildItems>
 		</Table>

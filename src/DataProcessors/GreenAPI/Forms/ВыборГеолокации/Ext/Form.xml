@@ -1,11 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
 			<v8:content>Отправить геолокацию</v8:content>
 		</v8:item>
 	</Title>
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>Vertical</Group>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
 			<Button name="Отправить" id="15">
@@ -31,21 +33,25 @@
 			<DataPath>НазваниеЛокации</DataPath>
 			<ContextMenu name="НазваниеЛокацииКонтекстноеМеню" id="2"/>
 			<ExtendedTooltip name="НазваниеЛокацииРасширеннаяПодсказка" id="3"/>
+			<SelectedItemsActionsPanel name="НазваниеЛокацииПанельДействийВыделенныхСтрок" id="17"/>
 		</InputField>
 		<InputField name="Адрес" id="7">
 			<DataPath>Адрес</DataPath>
 			<ContextMenu name="АдресКонтекстноеМеню" id="8"/>
 			<ExtendedTooltip name="АдресРасширеннаяПодсказка" id="9"/>
+			<SelectedItemsActionsPanel name="АдресПанельДействийВыделенныхСтрок" id="18"/>
 		</InputField>
 		<InputField name="Широта" id="10">
 			<DataPath>Широта</DataPath>
 			<ContextMenu name="ШиротаКонтекстноеМеню" id="11"/>
 			<ExtendedTooltip name="ШиротаРасширеннаяПодсказка" id="12"/>
+			<SelectedItemsActionsPanel name="ШиротаПанельДействийВыделенныхСтрок" id="19"/>
 		</InputField>
 		<InputField name="Долгота" id="4">
 			<DataPath>Долгота</DataPath>
 			<ContextMenu name="ДолготаКонтекстноеМеню" id="5"/>
 			<ExtendedTooltip name="ДолготаРасширеннаяПодсказка" id="6"/>
+			<SelectedItemsActionsPanel name="ДолготаПанельДействийВыделенныхСтрок" id="20"/>
 		</InputField>
 	</ChildItems>
 	<Attributes>
