@@ -36,7 +36,7 @@
 		<Metadata name="CommonModule.ГринАПИ_СлужебныйКлиент.Module" id="27f1fe89-3a40-4ab3-8f30-54fb24618a09.0" configVersion="97aabc1dcfbe1aaa961a7915f2d72977e71b99d5"/>
 		<Metadata name="CommonPicture.ГринАПИ_ИконкаПодсистемы" id="dfa99405-b290-4eb1-954e-ed4ed100e61e" configVersion="214f5a7caba8a97b41f1a00c4993b66c703bbf91"/>
 		<Metadata name="CommonPicture.ГринАПИ_ИконкаПодсистемы.Picture" id="dfa99405-b290-4eb1-954e-ed4ed100e61e.0" configVersion="d7e25bed33ef03cfef558ab12bbb265e4145ed9a"/>
-		<Metadata name="Configuration.СистемаВзаимодействия" id="5291f342-0228-4b96-a810-f58c125c2d76" configVersion="f428c552559b3aca6e240ae47c81a1e37deed576"/>
+		<Metadata name="Configuration.СистемаВзаимодействия" id="5291f342-0228-4b96-a810-f58c125c2d76" configVersion="d86fedefd7808a57ae44f56f3c0f1fab80c2f6eb"/>
 		<Metadata name="Configuration.СистемаВзаимодействия.ManagedApplicationModule" id="4289fab5-c4eb-4cfb-8fda-d45697a2d6bd.6" configVersion="34c33aa240849d77a2bbb02b780db4b6fec05ead"/>
 		<Metadata name="DataProcessor.GreenAPI" id="54062c19-a728-422a-9dd1-14f4951272cb" configVersion="df2a818586df3b1335a6ccbdfbdb07f9f0c6359c">
 			<Metadata name="DataProcessor.GreenAPI.Attribute.PartnerToken" id="384c3fd9-e40e-45c6-a3e6-c9f479810577"/>

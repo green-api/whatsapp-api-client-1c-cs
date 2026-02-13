@@ -54,7 +54,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ГринАПИ_ОсновнаяРоль</xr:Item>
 			</DefaultRoles>
 			<Vendor>GreenAPI</Vendor>
-			<Version>0.0.63.1</Version>
+			<Version>0.0.64</Version>
 			<Caption/>
 			<ShortCaption/>
 			<BriefInformation/>
