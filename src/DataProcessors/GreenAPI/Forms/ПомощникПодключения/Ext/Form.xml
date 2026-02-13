@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
-	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 	<SaveDataInSettings>UseList</SaveDataInSettings>
 	<AutoTitle>false</AutoTitle>
+	<Group>Vertical</Group>
 	<CommandBarLocation>None</CommandBarLocation>
 	<CommandSet>
 		<ExcludedCommand>Abort</ExcludedCommand>
@@ -18,6 +19,7 @@
 		<ExcludedCommand>SaveValues</ExcludedCommand>
 		<ExcludedCommand>Yes</ExcludedCommand>
 	</CommandSet>
+	<ShowCommandBar>false</ShowCommandBar>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
 		<Event name="OnOpen">ПриОткрытии</Event>
@@ -28,7 +30,6 @@
 		<UsualGroup name="Группа4" id="206">
 			<HorizontalStretch>false</HorizontalStretch>
 			<Group>Vertical</Group>
-			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="207"/>
@@ -36,7 +37,6 @@
 				<UsualGroup name="ГруппаКомпоновки" id="46">
 					<HorizontalStretch>false</HorizontalStretch>
 					<Group>Vertical</Group>
-					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаКомпоновкиExtendedTooltip" id="95"/>
@@ -53,7 +53,9 @@
 											<v8:content>Страница декорации начало</v8:content>
 										</v8:item>
 									</Title>
+									<Group>Vertical</Group>
 									<BackColor>#49B349</BackColor>
+									<ScrollOnCompress>false</ScrollOnCompress>
 									<ExtendedTooltip name="СтраницаДекорацииНачалоExtendedTooltip" id="97"/>
 									<ChildItems>
 										<LabelDecoration name="GREENAPI" id="172">
@@ -81,7 +83,9 @@
 											<v8:content>Страница декорации продолжение</v8:content>
 										</v8:item>
 									</Title>
+									<Group>Vertical</Group>
 									<BackColor>#49B349</BackColor>
+									<ScrollOnCompress>false</ScrollOnCompress>
 									<ExtendedTooltip name="СтраницаДекорацииПродолжениеExtendedTooltip" id="99"/>
 									<ChildItems>
 										<LabelDecoration name="GREENAPI1" id="177">
@@ -109,7 +113,9 @@
 											<v8:content>Страница декорации окончание</v8:content>
 										</v8:item>
 									</Title>
+									<Group>Vertical</Group>
 									<BackColor>#49B349</BackColor>
+									<ScrollOnCompress>false</ScrollOnCompress>
 									<ExtendedTooltip name="СтраницаДекорацииОкончаниеExtendedTooltip" id="101"/>
 									<ChildItems>
 										<LabelDecoration name="GREENAPI2" id="182">
@@ -143,11 +149,13 @@
 											<v8:content>Страница один</v8:content>
 										</v8:item>
 									</Title>
+									<Group>Vertical</Group>
+									<ScrollOnCompress>false</ScrollOnCompress>
 									<ExtendedTooltip name="СтраницаОдинExtendedTooltip" id="104"/>
 									<ChildItems>
 										<UsualGroup name="Группа1" id="188">
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
+											<Representation>WeakSeparation</Representation>
 											<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="189"/>
 											<ChildItems>
 												<LabelDecoration name="ДекорацияЧетыре1" id="185">
@@ -166,8 +174,8 @@
 												</LabelDecoration>
 												<UsualGroup name="Группа2" id="193">
 													<GroupVerticalAlign>Center</GroupVerticalAlign>
+													<Group>HorizontalIfPossible</Group>
 													<VerticalAlign>Center</VerticalAlign>
-													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="194"/>
@@ -199,6 +207,7 @@
 															</Border>
 															<ContextMenu name="КартинкаWhatsAppКонтекстноеМеню" id="225"/>
 															<ExtendedTooltip name="КартинкаWhatsAppРасширеннаяПодсказка" id="226"/>
+															<SelectedItemsActionsPanel name="КартинкаWhatsAppПанельДействийВыделенныхСтрок" id="418"/>
 														</PictureField>
 													</ChildItems>
 												</UsualGroup>
@@ -230,6 +239,8 @@
 											<v8:content>Страница два</v8:content>
 										</v8:item>
 									</ToolTip>
+									<Group>Vertical</Group>
+									<ScrollOnCompress>false</ScrollOnCompress>
 									<ExtendedTooltip name="СтраницаДваРасширеннаяПодсказка" id="108"/>
 									<ChildItems>
 										<UsualGroup name="Группа3" id="201">
@@ -237,7 +248,7 @@
 											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
 											<Group>Vertical</Group>
 											<HorizontalAlign>Center</HorizontalAlign>
-											<Behavior>Usual</Behavior>
+											<Representation>WeakSeparation</Representation>
 											<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="202"/>
 											<ChildItems>
 												<LabelDecoration name="ДекорацияТри" id="38">
@@ -288,11 +299,13 @@
 											<v8:content>Страница два</v8:content>
 										</v8:item>
 									</ToolTip>
+									<Group>Vertical</Group>
+									<ScrollOnCompress>false</ScrollOnCompress>
 									<ExtendedTooltip name="СтраницаТриРасширеннаяПодсказка" id="209"/>
 									<ChildItems>
 										<UsualGroup name="Группа5" id="210">
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
+											<Representation>WeakSeparation</Representation>
 											<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="211"/>
 											<ChildItems>
 												<LabelDecoration name="СоздайтеАккаунт" id="218">
@@ -316,6 +329,7 @@
 													</Border>
 													<ContextMenu name="КартинкаВыборАккаунтаКонтекстноеМеню" id="228"/>
 													<ExtendedTooltip name="КартинкаВыборАккаунтаРасширеннаяПодсказка" id="229"/>
+													<SelectedItemsActionsPanel name="КартинкаВыборАккаунтаПанельДействийВыделенныхСтрок" id="419"/>
 												</PictureField>
 												<LabelDecoration name="ВыберитеТариф" id="230">
 													<AutoMaxWidth>false</AutoMaxWidth>
@@ -347,11 +361,13 @@
 											<v8:content>Страница два</v8:content>
 										</v8:item>
 									</ToolTip>
+									<Group>Vertical</Group>
+									<ScrollOnCompress>false</ScrollOnCompress>
 									<ExtendedTooltip name="СтраницаЧетыреРасширеннаяПодсказка" id="234"/>
 									<ChildItems>
 										<UsualGroup name="Группа6" id="235">
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
+											<Representation>WeakSeparation</Representation>
 											<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="236"/>
 											<ChildItems>
 												<LabelDecoration name="ПодключитеТелефон" id="237">
@@ -376,6 +392,7 @@
 													</Border>
 													<ContextMenu name="КартинкаСканКодаКонтекстноеМеню" id="241"/>
 													<ExtendedTooltip name="КартинкаСканКодаРасширеннаяПодсказка" id="242"/>
+													<SelectedItemsActionsPanel name="КартинкаСканКодаПанельДействийВыделенныхСтрок" id="420"/>
 												</PictureField>
 												<LabelDecoration name="СканируйтеКод" id="243">
 													<AutoMaxWidth>false</AutoMaxWidth>
@@ -392,8 +409,8 @@
 												</LabelDecoration>
 												<UsualGroup name="Группа7" id="246">
 													<GroupVerticalAlign>Center</GroupVerticalAlign>
+													<Group>HorizontalIfPossible</Group>
 													<VerticalAlign>Center</VerticalAlign>
-													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="247"/>
@@ -431,11 +448,13 @@
 											<v8:content>Страница два</v8:content>
 										</v8:item>
 									</ToolTip>
+									<Group>Vertical</Group>
+									<ScrollOnCompress>false</ScrollOnCompress>
 									<ExtendedTooltip name="СтраницаПятьРасширеннаяПодсказка" id="255"/>
 									<ChildItems>
 										<UsualGroup name="Группа8" id="256">
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
+											<Representation>WeakSeparation</Representation>
 											<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="257"/>
 											<ChildItems>
 												<LabelDecoration name="УкажитеПараметр" id="258">
@@ -459,6 +478,7 @@
 													</InputHint>
 													<ContextMenu name="IdInstanceКонтекстноеМеню" id="262"/>
 													<ExtendedTooltip name="IdInstanceРасширеннаяПодсказка" id="263"/>
+													<SelectedItemsActionsPanel name="IdInstanceПанельДействийВыделенныхСтрок" id="421"/>
 												</InputField>
 												<InputField name="ApiToken" id="264">
 													<DataPath>Объект.ApiToken</DataPath>
@@ -470,6 +490,7 @@
 													</InputHint>
 													<ContextMenu name="ApiTokenКонтекстноеМеню" id="265"/>
 													<ExtendedTooltip name="ApiTokenРасширеннаяПодсказка" id="266"/>
+													<SelectedItemsActionsPanel name="ApiTokenПанельДействийВыделенныхСтрок" id="422"/>
 												</InputField>
 											</ChildItems>
 										</UsualGroup>
@@ -484,6 +505,7 @@
 											</Border>
 											<ContextMenu name="КартинкаДанныеАккаунтаКонтекстноеМеню" id="268"/>
 											<ExtendedTooltip name="КартинкаДанныеАккаунтаРасширеннаяПодсказка" id="269"/>
+											<SelectedItemsActionsPanel name="КартинкаДанныеАккаунтаПанельДействийВыделенныхСтрок" id="423"/>
 										</PictureField>
 									</ChildItems>
 								</Page>
@@ -494,11 +516,13 @@
 											<v8:content>Страница ожидания</v8:content>
 										</v8:item>
 									</Title>
+									<Group>Vertical</Group>
+									<ScrollOnCompress>false</ScrollOnCompress>
 									<ExtendedTooltip name="СтраницаОжиданияExtendedTooltip" id="114"/>
 									<ChildItems>
 										<UsualGroup name="Группа11" id="291">
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
+											<Representation>WeakSeparation</Representation>
 											<ExtendedTooltip name="Группа11РасширеннаяПодсказка" id="292"/>
 											<ChildItems>
 												<LabelDecoration name="ЗаголовокСтраницы" id="54">
@@ -533,11 +557,13 @@
 											<v8:content>Страница два</v8:content>
 										</v8:item>
 									</ToolTip>
+									<Group>Vertical</Group>
+									<ScrollOnCompress>false</ScrollOnCompress>
 									<ExtendedTooltip name="СтраницаСемьРасширеннаяПодсказка" id="271"/>
 									<ChildItems>
 										<UsualGroup name="Группа12" id="301">
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
+											<Representation>WeakSeparation</Representation>
 											<ExtendedTooltip name="Группа12РасширеннаяПодсказка" id="302"/>
 											<ChildItems>
 												<LabelDecoration name="ЗаголовокСтраницы1" id="303">
@@ -569,13 +595,12 @@
 														</v8:item>
 													</ToolTip>
 													<Group>Vertical</Group>
-													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаУспешноеПодключениеРасширеннаяПодсказка" id="307"/>
 													<ChildItems>
 														<UsualGroup name="Группа18" id="405">
-															<Behavior>Usual</Behavior>
+															<Group>HorizontalIfPossible</Group>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="Группа18РасширеннаяПодсказка" id="406"/>
@@ -601,7 +626,7 @@
 															</ChildItems>
 														</UsualGroup>
 														<UsualGroup name="Группа19" id="407">
-															<Behavior>Usual</Behavior>
+															<Group>HorizontalIfPossible</Group>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="Группа19РасширеннаяПодсказка" id="408"/>
@@ -635,7 +660,7 @@
 															<v8:content>Группа успешное подключение</v8:content>
 														</v8:item>
 													</ToolTip>
-													<Behavior>Usual</Behavior>
+													<Group>HorizontalIfPossible</Group>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаОшибкаПодключенияРасширеннаяПодсказка" id="315"/>
@@ -650,7 +675,6 @@
 														</PictureDecoration>
 														<UsualGroup name="Группа9" id="325">
 															<Group>Vertical</Group>
-															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="326"/>
@@ -675,6 +699,7 @@
 																	<MultiLine>true</MultiLine>
 																	<ContextMenu name="ТекстОшибкиПодключенияКонтекстноеМеню" id="328"/>
 																	<ExtendedTooltip name="ТекстОшибкиПодключенияРасширеннаяПодсказка" id="329"/>
+																	<SelectedItemsActionsPanel name="ТекстОшибкиПодключенияПанельДействийВыделенныхСтрок" id="424"/>
 																</InputField>
 															</ChildItems>
 														</UsualGroup>
@@ -691,11 +716,13 @@
 											<v8:content>Страница два</v8:content>
 										</v8:item>
 									</ToolTip>
+									<Group>Vertical</Group>
+									<ScrollOnCompress>false</ScrollOnCompress>
 									<ExtendedTooltip name="СтраницаВосемьРасширеннаяПодсказка" id="331"/>
 									<ChildItems>
 										<UsualGroup name="Группа13" id="332">
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
+											<Representation>WeakSeparation</Representation>
 											<ExtendedTooltip name="Группа13РасширеннаяПодсказка" id="333"/>
 											<ChildItems>
 												<LabelDecoration name="ЗаголовокСтраницы2" id="334">
@@ -721,6 +748,7 @@
 													<CheckBoxType>Auto</CheckBoxType>
 													<ContextMenu name="ИспользуйтеДляЧатБотовКонтекстноеМеню" id="338"/>
 													<ExtendedTooltip name="ИспользуйтеДляЧатБотовРасширеннаяПодсказка" id="339"/>
+													<SelectedItemsActionsPanel name="ИспользуйтеДляЧатБотовПанельДействийВыделенныхСтрок" id="425"/>
 												</CheckBoxField>
 												<LabelDecoration name="ДекорацияОтступ1" id="372">
 													<Font ref="style:SmallTextFont" kind="StyleItem"/>
@@ -734,6 +762,7 @@
 													<CheckBoxType>Auto</CheckBoxType>
 													<ContextMenu name="ИспользуйтеДляКлиентовКонтекстноеМеню" id="341"/>
 													<ExtendedTooltip name="ИспользуйтеДляКлиентовРасширеннаяПодсказка" id="342"/>
+													<SelectedItemsActionsPanel name="ИспользуйтеДляКлиентовПанельДействийВыделенныхСтрок" id="426"/>
 												</CheckBoxField>
 												<LabelDecoration name="ДекорацияОтступ2" id="375">
 													<Font ref="style:SmallTextFont" kind="StyleItem"/>
@@ -752,9 +781,10 @@
 														<TextColor>style:FieldSelectionBackColor</TextColor>
 														<GroupHorizontalAlign>Left</GroupHorizontalAlign>
 													</ExtendedTooltip>
+													<SelectedItemsActionsPanel name="ИспользуйтеДляСвоихКлиентоаПанельДействийВыделенныхСтрок" id="427"/>
 												</CheckBoxField>
 												<UsualGroup name="Группа15" id="384">
-													<Behavior>Usual</Behavior>
+													<Group>HorizontalIfPossible</Group>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="Группа15РасширеннаяПодсказка" id="385"/>
@@ -802,9 +832,10 @@
 														<TextColor>style:FieldSelectionBackColor</TextColor>
 														<GroupHorizontalAlign>Center</GroupHorizontalAlign>
 													</ExtendedTooltip>
+													<SelectedItemsActionsPanel name="СтарайтесьЧтобыОтвечалиПанельДействийВыделенныхСтрок" id="428"/>
 												</CheckBoxField>
 												<UsualGroup name="Группа16" id="389">
-													<Behavior>Usual</Behavior>
+													<Group>HorizontalIfPossible</Group>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="Группа16РасширеннаяПодсказка" id="390"/>
@@ -845,9 +876,10 @@
 													<ExtendedTooltip name="ПредоставьтеОтпискуРасширеннаяПодсказка" id="351">
 														<TextColor>style:FieldSelectionBackColor</TextColor>
 													</ExtendedTooltip>
+													<SelectedItemsActionsPanel name="ПредоставьтеОтпискуПанельДействийВыделенныхСтрок" id="429"/>
 												</CheckBoxField>
 												<UsualGroup name="Группа17" id="397">
-													<Behavior>Usual</Behavior>
+													<Group>HorizontalIfPossible</Group>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="Группа17РасширеннаяПодсказка" id="398"/>
@@ -890,11 +922,13 @@
 											<v8:content>Страница два</v8:content>
 										</v8:item>
 									</ToolTip>
+									<Group>Vertical</Group>
+									<ScrollOnCompress>false</ScrollOnCompress>
 									<ExtendedTooltip name="СтраницаДевятьРасширеннаяПодсказка" id="353"/>
 									<ChildItems>
 										<UsualGroup name="Группа14" id="354">
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
+											<Representation>WeakSeparation</Representation>
 											<ExtendedTooltip name="Группа14РасширеннаяПодсказка" id="355"/>
 											<ChildItems>
 												<LabelDecoration name="ЗаголовокСтраницы3" id="356">
@@ -915,9 +949,9 @@
 												<UsualGroup name="Группа10" id="365">
 													<GroupHorizontalAlign>Left</GroupHorizontalAlign>
 													<GroupVerticalAlign>Center</GroupVerticalAlign>
+													<Group>HorizontalIfPossible</Group>
 													<HorizontalAlign>Left</HorizontalAlign>
 													<VerticalAlign>Center</VerticalAlign>
-													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="Группа10РасширеннаяПодсказка" id="366"/>
@@ -947,6 +981,7 @@
 															</Border>
 															<ContextMenu name="ИконкаФинишКонтекстноеМеню" id="363"/>
 															<ExtendedTooltip name="ИконкаФинишРасширеннаяПодсказка" id="364"/>
+															<SelectedItemsActionsPanel name="ИконкаФинишПанельДействийВыделенныхСтрок" id="430"/>
 														</PictureField>
 													</ChildItems>
 												</UsualGroup>
@@ -962,7 +997,7 @@
 					<VerticalStretch>false</VerticalStretch>
 					<Group>Vertical</Group>
 					<VerticalAlign>Bottom</VerticalAlign>
-					<Behavior>Usual</Behavior>
+					<Representation>WeakSeparation</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="РамкаПанелиНавигацииExtendedTooltip" id="121"/>
 					<ChildItems>
@@ -979,6 +1014,7 @@
 										</v8:item>
 									</Title>
 									<Group>HorizontalIfPossible</Group>
+									<ScrollOnCompress>false</ScrollOnCompress>
 									<ExtendedTooltip name="СтраницаНавигацииНачалоExtendedTooltip" id="123"/>
 									<ChildItems>
 										<CommandBar name="КоманднаяПанельСлева1" id="150">
@@ -1006,6 +1042,7 @@
 													<TextColor>web:White</TextColor>
 													<BackColor>#49B349</BackColor>
 													<Font ref="style:LargeTextFont" kind="StyleItem"/>
+													<ButtonImportance>Main</ButtonImportance>
 													<ExtendedTooltip name="КомандаДалееExtendedTooltip" id="126"/>
 												</Button>
 												<Button name="КомандаОтмена" id="73">
@@ -1033,6 +1070,7 @@
 										</v8:item>
 									</Title>
 									<Group>HorizontalIfPossible</Group>
+									<ScrollOnCompress>false</ScrollOnCompress>
 									<ExtendedTooltip name="СтраницаНавигацииПродолжениеExtendedTooltip" id="129"/>
 									<ChildItems>
 										<CommandBar name="КоманднаяПанельСлева2" id="155">
@@ -1087,6 +1125,7 @@
 										</v8:item>
 									</Title>
 									<Group>HorizontalIfPossible</Group>
+									<ScrollOnCompress>false</ScrollOnCompress>
 									<ExtendedTooltip name="СтраницаНавигацииОкончаниеExtendedTooltip" id="135"/>
 									<ChildItems>
 										<CommandBar name="КоманднаяПанельСлева3" id="160">
@@ -1117,6 +1156,7 @@
 										</v8:item>
 									</Title>
 									<Group>HorizontalIfPossible</Group>
+									<ScrollOnCompress>false</ScrollOnCompress>
 									<ExtendedTooltip name="СтраницаНавигацииОжиданиеExtendedTooltip" id="141"/>
 									<ChildItems>
 										<LabelDecoration name="Декорация4" id="369">

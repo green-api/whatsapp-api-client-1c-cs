@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 	<SaveDataInSettings>UseList</SaveDataInSettings>
 	<AutoTitle>false</AutoTitle>
+	<Group>Vertical</Group>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
 	</AutoCommandBar>
@@ -14,14 +16,13 @@
 	<ChildItems>
 		<UsualGroup name="Группа4" id="188">
 			<Group>Vertical</Group>
-			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="189"/>
 			<ChildItems>
 				<UsualGroup name="Группа3" id="183">
 					<Width>130</Width>
-					<Behavior>Usual</Behavior>
+					<Group>HorizontalIfPossible</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<BackColor>#4FAD4F</BackColor>
@@ -75,6 +76,8 @@
 									<v8:content>Настройки</v8:content>
 								</v8:item>
 							</ToolTip>
+							<Group>Vertical</Group>
+							<ScrollOnCompress>false</ScrollOnCompress>
 							<ExtendedTooltip name="НастройкиРасширеннаяПодсказка" id="491"/>
 							<ChildItems>
 								<Pages name="ДеталиНастроек" id="492">
@@ -106,6 +109,8 @@
 													<v8:content>Настройки внешние</v8:content>
 												</v8:item>
 											</ToolTip>
+											<Group>Vertical</Group>
+											<ScrollOnCompress>false</ScrollOnCompress>
 											<ExtendedTooltip name="НастройкиВнешниеРасширеннаяПодсказка" id="154"/>
 											<ChildItems>
 												<LabelDecoration name="ОписаниеНачало" id="155">
@@ -169,6 +174,7 @@
 													</InputHint>
 													<ContextMenu name="IdInstanceКонтекстноеМеню" id="20"/>
 													<ExtendedTooltip name="IdInstanceРасширеннаяПодсказка" id="21"/>
+													<SelectedItemsActionsPanel name="IdInstanceПанельДействийВыделенныхСтрок" id="962"/>
 													<Events>
 														<Event name="OnChange">IdInstanceПриИзменении</Event>
 													</Events>
@@ -191,6 +197,7 @@
 													</InputHint>
 													<ContextMenu name="ApiTokenКонтекстноеМеню" id="17"/>
 													<ExtendedTooltip name="ApiTokenРасширеннаяПодсказка" id="18"/>
+													<SelectedItemsActionsPanel name="ApiTokenПанельДействийВыделенныхСтрок" id="963"/>
 													<Events>
 														<Event name="OnChange">ApiTokenПриИзменении</Event>
 													</Events>
@@ -236,6 +243,8 @@
 													<v8:content>Настройки входящих уведомлений</v8:content>
 												</v8:item>
 											</ToolTip>
+											<Group>Vertical</Group>
+											<ScrollOnCompress>false</ScrollOnCompress>
 											<ExtendedTooltip name="НастройкиВходящихУведомленийРасширеннаяПодсказка" id="82"/>
 											<ChildItems>
 												<UsualGroup name="ГруппаПолучатьВходящиеУведомления" id="759">
@@ -253,7 +262,6 @@
 													</ToolTip>
 													<HorizontalStretch>true</HorizontalStretch>
 													<Group>Vertical</Group>
-													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<BackColor>style:ToolTipBackColor</BackColor>
@@ -286,6 +294,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 																	</v8:item>
 																</Title>
 															</ExtendedTooltip>
+															<SelectedItemsActionsPanel name="ПолучатьВходящиеУведомленияПанельДействийВыделенныхСтрок" id="964"/>
 															<Events>
 																<Event name="OnChange">ПолучатьВходящиеУведомленияПриИзменении</Event>
 															</Events>
@@ -306,7 +315,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 														</v8:item>
 													</ToolTip>
 													<Group>Vertical</Group>
-													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ДеталиПредупреждениеСтандартныеНастройкиРасширеннаяПодсказка" id="104"/>
@@ -325,7 +333,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 																</v8:item>
 															</ToolTip>
 															<Group>Horizontal</Group>
-															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаПояснениеРасширеннаяПодсказка" id="114"/>
@@ -382,7 +389,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 														</v8:item>
 													</ToolTip>
 													<Group>Vertical</Group>
-													<Behavior>Usual</Behavior>
 													<Representation>NormalSeparation</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ДеталиНастройкиУведомленийРасширеннаяПодсказка" id="90"/>
@@ -393,6 +399,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 															<CheckBoxType>Auto</CheckBoxType>
 															<ContextMenu name="ПолучатьВходящиеСообщенияИФайлыКонтекстноеМеню" id="92"/>
 															<ExtendedTooltip name="ПолучатьВходящиеСообщенияИФайлыРасширеннаяПодсказка" id="93"/>
+															<SelectedItemsActionsPanel name="ПолучатьВходящиеСообщенияИФайлыПанельДействийВыделенныхСтрок" id="965"/>
 															<Events>
 																<Event name="OnChange">ПолучатьВходящиеСообщенияИФайлыПриИзменении</Event>
 															</Events>
@@ -403,6 +410,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 															<CheckBoxType>Auto</CheckBoxType>
 															<ContextMenu name="ПолучатьСтатусыОтправленныхСообщенийКонтекстноеМеню" id="95"/>
 															<ExtendedTooltip name="ПолучатьСтатусыОтправленныхСообщенийРасширеннаяПодсказка" id="96"/>
+															<SelectedItemsActionsPanel name="ПолучатьСтатусыОтправленныхСообщенийПанельДействийВыделенныхСтрок" id="966"/>
 															<Events>
 																<Event name="OnChange">ПолучатьСтатусыОтправленныхСообщенийПриИзменении</Event>
 															</Events>
@@ -414,6 +422,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 															<CheckBoxType>Auto</CheckBoxType>
 															<ContextMenu name="ПолучатьУведомленииОСостоянииТелефонаКонтекстноеМеню" id="98"/>
 															<ExtendedTooltip name="ПолучатьУведомленииОСостоянииТелефонаРасширеннаяПодсказка" id="99"/>
+															<SelectedItemsActionsPanel name="ПолучатьУведомленииОСостоянииТелефонаПанельДействийВыделенныхСтрок" id="967"/>
 															<Events>
 																<Event name="OnChange">ПолучатьУведомленииОСостоянииТелефонаПриИзменении</Event>
 															</Events>
@@ -424,6 +433,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 															<CheckBoxType>Auto</CheckBoxType>
 															<ContextMenu name="ПолучатьУведомленияОСостоянииАккаунтаКонтекстноеМеню" id="101"/>
 															<ExtendedTooltip name="ПолучатьУведомленияОСостоянииАккаунтаРасширеннаяПодсказка" id="102"/>
+															<SelectedItemsActionsPanel name="ПолучатьУведомленияОСостоянииАккаунтаПанельДействийВыделенныхСтрок" id="968"/>
 															<Events>
 																<Event name="OnChange">ПолучатьУведомленияОСостоянииАккаунтаПриИзменении</Event>
 															</Events>
@@ -456,10 +466,13 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 													<v8:content>Прочие настройки</v8:content>
 												</v8:item>
 											</ToolTip>
+											<Group>Vertical</Group>
+											<ScrollOnCompress>false</ScrollOnCompress>
 											<ExtendedTooltip name="ПрочиеНастройкиРасширеннаяПодсказка" id="124"/>
 											<ChildItems>
 												<UsualGroup name="Группа2" id="771">
 													<HorizontalStretch>true</HorizontalStretch>
+													<Group>HorizontalIfPossible</Group>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<BackColor>style:ToolTipBackColor</BackColor>
@@ -482,6 +495,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 																	</v8:item>
 																</Title>
 															</ExtendedTooltip>
+															<SelectedItemsActionsPanel name="ОтмечатьВходящиеСообщенияПрочитаннымиПанельДействийВыделенныхСтрок" id="969"/>
 															<Events>
 																<Event name="OnChange">ОтмечатьВходящиеСообщенияПрочитаннымиПриИзменении</Event>
 															</Events>
@@ -490,7 +504,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 												</UsualGroup>
 												<UsualGroup name="Группа1" id="141">
 													<Group>AlwaysHorizontal</Group>
-													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="142"/>
@@ -508,6 +521,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 																	</v8:item>
 																</Title>
 															</ExtendedTooltip>
+															<SelectedItemsActionsPanel name="ИнтервалОтправкиСообщенийПанельДействийВыделенныхСтрок" id="970"/>
 															<Events>
 																<Event name="OnChange">ИнтервалОтправкиСообщенийПриИзменении</Event>
 															</Events>
@@ -550,12 +564,15 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 													<v8:content>Параметры хостов</v8:content>
 												</v8:item>
 											</ToolTip>
+											<Group>Vertical</Group>
+											<ScrollOnCompress>false</ScrollOnCompress>
 											<ExtendedTooltip name="ПараметрыХостовРасширеннаяПодсказка" id="762"/>
 											<ChildItems>
 												<InputField name="apiUrl" id="763">
 													<DataPath>Объект.apiUrl</DataPath>
 													<ContextMenu name="apiUrlКонтекстноеМеню" id="764"/>
 													<ExtendedTooltip name="apiUrlРасширеннаяПодсказка" id="765"/>
+													<SelectedItemsActionsPanel name="apiUrlПанельДействийВыделенныхСтрок" id="971"/>
 													<Events>
 														<Event name="TextEditEnd">apiUrlОкончаниеВводаТекста</Event>
 													</Events>
@@ -564,6 +581,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 													<DataPath>Объект.mediaUrl</DataPath>
 													<ContextMenu name="mediaUrlКонтекстноеМеню" id="767"/>
 													<ExtendedTooltip name="mediaUrlРасширеннаяПодсказка" id="768"/>
+													<SelectedItemsActionsPanel name="mediaUrlПанельДействийВыделенныхСтрок" id="972"/>
 													<Events>
 														<Event name="TextEditEnd">mediaUrlОкончаниеВводаТекста</Event>
 													</Events>
@@ -595,6 +613,8 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 									<v8:content>Отправка сообщений</v8:content>
 								</v8:item>
 							</ToolTip>
+							<Group>Vertical</Group>
+							<ScrollOnCompress>false</ScrollOnCompress>
 							<ExtendedTooltip name="ОтправкаСообщенийРасширеннаяПодсказка" id="6"/>
 							<ChildItems>
 								<UsualGroup name="ГруппаОтправка" id="193">
@@ -611,7 +631,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 										</v8:item>
 									</ToolTip>
 									<Group>AlwaysHorizontal</Group>
-									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаОтправкаРасширеннаяПодсказка" id="194"/>
@@ -625,6 +644,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 											</Title>
 											<Width>30</Width>
 											<Group>Vertical</Group>
+											<Representation>WeakSeparation</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаОтправкаТипЧатаРасширеннаяПодсказка" id="894"/>
 											<ChildItems>
@@ -632,6 +652,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 													<HorizontalStretch>true</HorizontalStretch>
 													<Group>Vertical</Group>
 													<ChildrenAlign>None</ChildrenAlign>
+													<Representation>WeakSeparation</Representation>
 													<ShowTitle>false</ShowTitle>
 													<BackColor>style:ToolTipBackColor</BackColor>
 													<ExtendedTooltip name="ГруппаТипЧатаРасширеннаяПодсказка" id="896"/>
@@ -669,6 +690,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 															</ChoiceList>
 															<ContextMenu name="ПереключательТипаЧатаКонтекстноеМеню" id="500"/>
 															<ExtendedTooltip name="ПереключательТипаЧатаРасширеннаяПодсказка" id="501"/>
+															<SelectedItemsActionsPanel name="ПереключательТипаЧатаПанельДействийВыделенныхСтрок" id="973"/>
 															<Events>
 																<Event name="OnChange">ПереключательТипаЧатаПриИзменении</Event>
 															</Events>
@@ -687,6 +709,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 																	<Group>AlwaysHorizontal</Group>
 																	<ChildrenAlign>ItemsLeftTitlesLeft</ChildrenAlign>
 																	<ShowTitle>false</ShowTitle>
+																	<ScrollOnCompress>false</ScrollOnCompress>
 																	<ExtendedTooltip name="СтраницаНомерТелефонаЧатаРасширеннаяПодсказка" id="505"/>
 																	<ChildItems>
 																		<LabelDecoration name="Декорация7" id="905">
@@ -715,6 +738,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 																			<EditTextUpdate>OnValueChange</EditTextUpdate>
 																			<ContextMenu name="НомерТелефонаКонтекстноеМеню" id="41"/>
 																			<ExtendedTooltip name="НомерТелефонаРасширеннаяПодсказка" id="42"/>
+																			<SelectedItemsActionsPanel name="НомерТелефонаПанельДействийВыделенныхСтрок" id="974"/>
 																		</InputField>
 																	</ChildItems>
 																</Page>
@@ -728,6 +752,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 																	<Group>AlwaysHorizontal</Group>
 																	<ChildrenAlign>ItemsLeftTitlesLeft</ChildrenAlign>
 																	<ShowTitle>false</ShowTitle>
+																	<ScrollOnCompress>false</ScrollOnCompress>
 																	<ExtendedTooltip name="СтраницаИдЧатаРасширеннаяПодсказка" id="507"/>
 																	<ChildItems>
 																		<LabelDecoration name="Декорация6" id="902">
@@ -748,6 +773,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 																			<HorizontalStretch>true</HorizontalStretch>
 																			<ContextMenu name="ПараметрИдЧата2КонтекстноеМеню" id="552"/>
 																			<ExtendedTooltip name="ПараметрИдЧата2РасширеннаяПодсказка" id="553"/>
+																			<SelectedItemsActionsPanel name="ПараметрИдЧата2ПанельДействийВыделенныхСтрок" id="975"/>
 																		</InputField>
 																	</ChildItems>
 																</Page>
@@ -766,6 +792,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 																	<v8:content>Группа отправка текст сообщения</v8:content>
 																</v8:item>
 															</ToolTip>
+															<Group>HorizontalIfPossible</Group>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаОтправкаТекстСообщенияРасширеннаяПодсказка" id="914"/>
@@ -789,6 +816,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 																	<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 																	<ContextMenu name="ОтправкаТекстСообщенияКонтекстноеМеню" id="900"/>
 																	<ExtendedTooltip name="ОтправкаТекстСообщенияРасширеннаяПодсказка" id="901"/>
+																	<SelectedItemsActionsPanel name="ОтправкаТекстСообщенияПанельДействийВыделенныхСтрок" id="976"/>
 																</InputField>
 															</ChildItems>
 														</UsualGroup>
@@ -808,7 +836,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 														</v8:item>
 													</ToolTip>
 													<Group>Vertical</Group>
-													<Behavior>Usual</Behavior>
 													<Representation>StrongSeparation</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаОтправкиКомандыРасширеннаяПодсказка" id="175"/>
@@ -901,7 +928,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 													</ToolTip>
 													<HorizontalStretch>true</HorizontalStretch>
 													<Group>Vertical</Group>
-													<Behavior>Usual</Behavior>
 													<Representation>StrongSeparation</Representation>
 													<ExtendedTooltip name="ГруппаОправкаПересылкаРасширеннаяПодсказка" id="724"/>
 													<ChildItems>
@@ -911,6 +937,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 															<HorizontalStretch>true</HorizontalStretch>
 															<ContextMenu name="ПараметрИдЧата6КонтекстноеМеню" id="728"/>
 															<ExtendedTooltip name="ПараметрИдЧата6РасширеннаяПодсказка" id="729"/>
+															<SelectedItemsActionsPanel name="ПараметрИдЧата6ПанельДействийВыделенныхСтрок" id="977"/>
 														</InputField>
 														<InputField name="ПараметрИдЧатаИсточника" id="733">
 															<DataPath>ПараметрИдЧатаИсточника</DataPath>
@@ -918,6 +945,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 															<HorizontalStretch>true</HorizontalStretch>
 															<ContextMenu name="ПараметрИдЧатаИсточникаКонтекстноеМеню" id="734"/>
 															<ExtendedTooltip name="ПараметрИдЧатаИсточникаРасширеннаяПодсказка" id="735"/>
+															<SelectedItemsActionsPanel name="ПараметрИдЧатаИсточникаПанельДействийВыделенныхСтрок" id="978"/>
 														</InputField>
 														<InputField name="ПараметрИдСообщения2" id="730">
 															<DataPath>ПараметрИдСообщения</DataPath>
@@ -931,6 +959,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 															<HorizontalStretch>true</HorizontalStretch>
 															<ContextMenu name="ПараметрИдСообщения2КонтекстноеМеню" id="731"/>
 															<ExtendedTooltip name="ПараметрИдСообщения2РасширеннаяПодсказка" id="732"/>
+															<SelectedItemsActionsPanel name="ПараметрИдСообщения2ПанельДействийВыделенныхСтрок" id="979"/>
 														</InputField>
 														<Button name="ПереслатьСообщение" id="725">
 															<Type>UsualButton</Type>
@@ -958,7 +987,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 												</v8:item>
 											</ToolTip>
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
+											<Representation>WeakSeparation</Representation>
 											<ExtendedTooltip name="ГруппаОтправкаОтветРасширеннаяПодсказка" id="173"/>
 											<ChildItems>
 												<InputField name="КонсольОтправка" id="43">
@@ -969,6 +998,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 													<EditTextUpdate>OnValueChange</EditTextUpdate>
 													<ContextMenu name="КонсольОтправкаКонтекстноеМеню" id="44"/>
 													<ExtendedTooltip name="КонсольОтправкаРасширеннаяПодсказка" id="45"/>
+													<SelectedItemsActionsPanel name="КонсольОтправкаПанельДействийВыделенныхСтрок" id="980"/>
 												</InputField>
 											</ChildItems>
 										</UsualGroup>
@@ -987,7 +1017,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 											</ToolTip>
 											<Width>30</Width>
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
 											<Representation>StrongSeparation</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаОтправкаДокументацияРасширеннаяПодсказка" id="665"/>
@@ -1134,6 +1163,8 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 									<v8:content>Получение сообщений</v8:content>
 								</v8:item>
 							</ToolTip>
+							<Group>Vertical</Group>
+							<ScrollOnCompress>false</ScrollOnCompress>
 							<ExtendedTooltip name="ПолучениеСообщенийРасширеннаяПодсказка" id="52"/>
 							<ChildItems>
 								<UsualGroup name="ГруппаНестандартныеНастройки" id="115">
@@ -1152,7 +1183,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 									</ToolTip>
 									<GroupVerticalAlign>Center</GroupVerticalAlign>
 									<Group>Horizontal</Group>
-									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаНестандартныеНастройкиРасширеннаяПодсказка" id="116"/>
@@ -1230,7 +1260,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 														</v8:item>
 													</ToolTip>
 													<Group>Vertical</Group>
-													<Behavior>Usual</Behavior>
 													<Representation>StrongSeparation</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаПолучитьСообщениеКомандыРасширеннаяПодсказка" id="215"/>
@@ -1283,6 +1312,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 																	<TextColor>#0000FF</TextColor>
 																	<ContextMenu name="СтатусПолучениеСообщенияКонтекстноеМеню" id="240"/>
 																	<ExtendedTooltip name="СтатусПолучениеСообщенияРасширеннаяПодсказка" id="241"/>
+																	<SelectedItemsActionsPanel name="СтатусПолучениеСообщенияПанельДействийВыделенныхСтрок" id="981"/>
 																</LabelField>
 															</ChildItems>
 														</UsualGroup>
@@ -1318,6 +1348,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 																	<TextColor>#0000FF</TextColor>
 																	<ContextMenu name="СтатусПолученияВсехСообщенийКонтекстноеМеню" id="932"/>
 																	<ExtendedTooltip name="СтатусПолученияВсехСообщенийРасширеннаяПодсказка" id="933"/>
+																	<SelectedItemsActionsPanel name="СтатусПолученияВсехСообщенийПанельДействийВыделенныхСтрок" id="982"/>
 																</LabelField>
 															</ChildItems>
 														</UsualGroup>
@@ -1337,7 +1368,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 														</v8:item>
 													</ToolTip>
 													<Group>Vertical</Group>
-													<Behavior>Usual</Behavior>
 													<Representation>StrongSeparation</Representation>
 													<ExtendedTooltip name="ГруппаСкачатьФайлРасширеннаяПодсказка" id="740"/>
 													<ChildItems>
@@ -1345,11 +1375,13 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 															<DataPath>ПараметрИдЧата</DataPath>
 															<ContextMenu name="ПараметрИдЧата7КонтекстноеМеню" id="747"/>
 															<ExtendedTooltip name="ПараметрИдЧата7РасширеннаяПодсказка" id="748"/>
+															<SelectedItemsActionsPanel name="ПараметрИдЧата7ПанельДействийВыделенныхСтрок" id="983"/>
 														</InputField>
 														<InputField name="ПараметрИдСообщения3" id="743">
 															<DataPath>ПараметрИдСообщения</DataPath>
 															<ContextMenu name="ПараметрИдСообщения3КонтекстноеМеню" id="744"/>
 															<ExtendedTooltip name="ПараметрИдСообщения3РасширеннаяПодсказка" id="745"/>
+															<SelectedItemsActionsPanel name="ПараметрИдСообщения3ПанельДействийВыделенныхСтрок" id="984"/>
 														</InputField>
 														<Button name="СкачатьФайлИзВходящегоУведомления" id="741">
 															<Type>UsualButton</Type>
@@ -1377,7 +1409,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 												</v8:item>
 											</ToolTip>
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
+											<Representation>WeakSeparation</Representation>
 											<ExtendedTooltip name="ГруппаРезультатыСообщенияРасширеннаяПодсказка" id="205"/>
 											<ChildItems>
 												<InputField name="ПолученФайл" id="208">
@@ -1394,6 +1426,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 													<OpenButton>true</OpenButton>
 													<ContextMenu name="ПолученФайлКонтекстноеМеню" id="209"/>
 													<ExtendedTooltip name="ПолученФайлРасширеннаяПодсказка" id="210"/>
+													<SelectedItemsActionsPanel name="ПолученФайлПанельДействийВыделенныхСтрок" id="985"/>
 													<Events>
 														<Event name="StartChoice">ПолученФайлНачалоВыбора</Event>
 														<Event name="Opening">ПолученФайлОткрытие</Event>
@@ -1410,6 +1443,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 													<MultiLine>true</MultiLine>
 													<ContextMenu name="ТекстПолученноеСообщениеКонтекстноеМеню" id="58"/>
 													<ExtendedTooltip name="ТекстПолученноеСообщениеРасширеннаяПодсказка" id="59"/>
+													<SelectedItemsActionsPanel name="ТекстПолученноеСообщениеПанельДействийВыделенныхСтрок" id="986"/>
 												</InputField>
 											</ChildItems>
 										</UsualGroup>
@@ -1533,6 +1567,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 								</v8:item>
 							</ToolTip>
 							<Group>AlwaysHorizontal</Group>
+							<ScrollOnCompress>false</ScrollOnCompress>
 							<ExtendedTooltip name="АккаунтРасширеннаяПодсказка" id="243"/>
 							<ChildItems>
 								<UsualGroup name="ГруппаЗапросы" id="251">
@@ -1550,7 +1585,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 									</ToolTip>
 									<Width>30</Width>
 									<Group>Vertical</Group>
-									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаЗапросыРасширеннаяПодсказка" id="252"/>
@@ -1629,7 +1663,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 												</v8:item>
 											</ToolTip>
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
 											<Representation>StrongSeparation</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаПолучитьQRКодРасширеннаяПодсказка" id="278"/>
@@ -1657,6 +1690,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 													<AutoMaxHeight>false</AutoMaxHeight>
 													<ContextMenu name="QRКодКонтекстноеМеню" id="282"/>
 													<ExtendedTooltip name="QRКодРасширеннаяПодсказка" id="283"/>
+													<SelectedItemsActionsPanel name="QRКодПанельДействийВыделенныхСтрок" id="987"/>
 												</HTMLDocumentField>
 											</ChildItems>
 										</UsualGroup>
@@ -1675,6 +1709,8 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 											<v8:content>Группа аккаунт ответ</v8:content>
 										</v8:item>
 									</ToolTip>
+									<Group>HorizontalIfPossible</Group>
+									<Representation>WeakSeparation</Representation>
 									<ExtendedTooltip name="ГруппаАккаунтОтветРасширеннаяПодсказка" id="938"/>
 									<ChildItems>
 										<InputField name="КонсольАккаунт" id="290">
@@ -1691,6 +1727,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 											<MultiLine>true</MultiLine>
 											<ContextMenu name="КонсольАккаунтКонтекстноеМеню" id="291"/>
 											<ExtendedTooltip name="КонсольАккаунтРасширеннаяПодсказка" id="292"/>
+											<SelectedItemsActionsPanel name="КонсольАккаунтПанельДействийВыделенныхСтрок" id="988"/>
 										</InputField>
 									</ChildItems>
 								</UsualGroup>
@@ -1708,7 +1745,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 										</v8:item>
 									</ToolTip>
 									<Width>30</Width>
-									<Behavior>Usual</Behavior>
+									<Group>HorizontalIfPossible</Group>
 									<Representation>StrongSeparation</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаАккаунтДокументацияРасширеннаяПодсказка" id="667"/>
@@ -1826,6 +1863,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 								</v8:item>
 							</ToolTip>
 							<Group>AlwaysHorizontal</Group>
+							<ScrollOnCompress>false</ScrollOnCompress>
 							<ExtendedTooltip name="ЖурналыРасширеннаяПодсказка" id="285"/>
 							<ChildItems>
 								<UsualGroup name="ГруппаЖурналыКоманды" id="941">
@@ -1878,6 +1916,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 													<HorizontalStretch>true</HorizontalStretch>
 													<ContextMenu name="ИнтервалКонтекстноеМеню" id="542"/>
 													<ExtendedTooltip name="ИнтервалРасширеннаяПодсказка" id="543"/>
+													<SelectedItemsActionsPanel name="ИнтервалПанельДействийВыделенныхСтрок" id="989"/>
 												</InputField>
 												<Button name="ПолучитьЖурналВходящихСообщений" id="286">
 													<Type>UsualButton</Type>
@@ -1921,6 +1960,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 													<HorizontalStretch>true</HorizontalStretch>
 													<ContextMenu name="ЖурналИдЧатаКонтекстноеМеню" id="519"/>
 													<ExtendedTooltip name="ЖурналИдЧатаРасширеннаяПодсказка" id="520"/>
+													<SelectedItemsActionsPanel name="ЖурналИдЧатаПанельДействийВыделенныхСтрок" id="990"/>
 												</InputField>
 												<InputField name="КоличествоСообщений" id="521">
 													<DataPath>КоличествоСообщений</DataPath>
@@ -1935,6 +1975,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 													<HorizontalStretch>true</HorizontalStretch>
 													<ContextMenu name="КоличествоСообщенийКонтекстноеМеню" id="522"/>
 													<ExtendedTooltip name="КоличествоСообщенийРасширеннаяПодсказка" id="523"/>
+													<SelectedItemsActionsPanel name="КоличествоСообщенийПанельДействийВыделенныхСтрок" id="991"/>
 												</InputField>
 												<Button name="ПолучитьИсториюСообщенийЧата" id="513">
 													<Type>UsualButton</Type>
@@ -1960,7 +2001,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 												</v8:item>
 											</ToolTip>
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
 											<Representation>StrongSeparation</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаПолучитьСообщениеЧатаРасширеннаяПодсказка" id="547"/>
@@ -1972,6 +2012,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 													<ContextMenu name="ПараметрИдЧатаПолучитьСообщениеЧатаКонтекстноеМеню" id="948"/>
 													<ExtendedTooltip name="ПараметрИдЧатаПолучитьСообщениеЧатаРасширеннаяПодсказка" id="949"/>
+													<SelectedItemsActionsPanel name="ПараметрИдЧатаПолучитьСообщениеЧатаПанельДействийВыделенныхСтрок" id="992"/>
 												</InputField>
 												<InputField name="ЖурналПараметрИдСообщения" id="548">
 													<DataPath>ПараметрИдСообщения</DataPath>
@@ -1985,6 +2026,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 													<HorizontalStretch>true</HorizontalStretch>
 													<ContextMenu name="ЖурналПараметрИдСообщенияКонтекстноеМеню" id="549"/>
 													<ExtendedTooltip name="ЖурналПараметрИдСообщенияРасширеннаяПодсказка" id="550"/>
+													<SelectedItemsActionsPanel name="ЖурналПараметрИдСообщенияПанельДействийВыделенныхСтрок" id="993"/>
 												</InputField>
 												<Button name="ПолучитьСообщениеЧата" id="544">
 													<Type>UsualButton</Type>
@@ -2011,6 +2053,8 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 											<v8:content>Группа консоль журналы</v8:content>
 										</v8:item>
 									</ToolTip>
+									<Group>HorizontalIfPossible</Group>
+									<Representation>WeakSeparation</Representation>
 									<ExtendedTooltip name="ГруппаКонсольЖурналыРасширеннаяПодсказка" id="951"/>
 									<ChildItems>
 										<InputField name="КонсольЖурналы" id="244">
@@ -2025,6 +2069,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 											<MultiLine>true</MultiLine>
 											<ContextMenu name="КонсольЖурналыКонтекстноеМеню" id="245"/>
 											<ExtendedTooltip name="КонсольЖурналыРасширеннаяПодсказка" id="246"/>
+											<SelectedItemsActionsPanel name="КонсольЖурналыПанельДействийВыделенныхСтрок" id="994"/>
 										</InputField>
 									</ChildItems>
 								</UsualGroup>
@@ -2043,7 +2088,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 									</ToolTip>
 									<Width>30</Width>
 									<Group>Vertical</Group>
-									<Behavior>Usual</Behavior>
 									<Representation>StrongSeparation</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаЖурналыДокументацияРасширеннаяПодсказка" id="684"/>
@@ -2133,6 +2177,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 								</v8:item>
 							</ToolTip>
 							<Group>AlwaysHorizontal</Group>
+							<ScrollOnCompress>false</ScrollOnCompress>
 							<ExtendedTooltip name="ОчередиРасширеннаяПодсказка" id="296"/>
 							<ChildItems>
 								<UsualGroup name="ГруппаОчередиЗапросы" id="297">
@@ -2150,7 +2195,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 									</ToolTip>
 									<Width>32</Width>
 									<Group>Vertical</Group>
-									<Behavior>Usual</Behavior>
 									<Representation>StrongSeparation</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаОчередиЗапросыРасширеннаяПодсказка" id="298"/>
@@ -2186,6 +2230,8 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 											<v8:content>Группа консоль очереди</v8:content>
 										</v8:item>
 									</ToolTip>
+									<Group>HorizontalIfPossible</Group>
+									<Representation>WeakSeparation</Representation>
 									<ExtendedTooltip name="ГруппаКонсольОчередиРасширеннаяПодсказка" id="953"/>
 									<ChildItems>
 										<InputField name="КонсольОчереди" id="299">
@@ -2194,6 +2240,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 											<MultiLine>true</MultiLine>
 											<ContextMenu name="КонсольОчередиКонтекстноеМеню" id="300"/>
 											<ExtendedTooltip name="КонсольОчередиРасширеннаяПодсказка" id="301"/>
+											<SelectedItemsActionsPanel name="КонсольОчередиПанельДействийВыделенныхСтрок" id="995"/>
 										</InputField>
 									</ChildItems>
 								</UsualGroup>
@@ -2212,7 +2259,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 									</ToolTip>
 									<Width>30</Width>
 									<Group>Vertical</Group>
-									<Behavior>Usual</Behavior>
 									<Representation>StrongSeparation</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаОчередиДокументацияРасширеннаяПодсказка" id="673"/>
@@ -2274,6 +2320,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 								</v8:item>
 							</ToolTip>
 							<Group>AlwaysHorizontal</Group>
+							<ScrollOnCompress>false</ScrollOnCompress>
 							<ExtendedTooltip name="ГруппыРасширеннаяПодсказка" id="307"/>
 							<ChildItems>
 								<UsualGroup name="ГруппыЗапросы" id="311">
@@ -2291,7 +2338,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 									</ToolTip>
 									<Width>35</Width>
 									<Group>Vertical</Group>
-									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппыЗапросыРасширеннаяПодсказка" id="312"/>
@@ -2310,7 +2356,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 												</v8:item>
 											</ToolTip>
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
 											<Representation>StrongSeparation</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаСоздатьГруппуРасширеннаяПодсказка" id="316"/>
@@ -2321,6 +2366,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 													<HorizontalStretch>true</HorizontalStretch>
 													<ContextMenu name="ПараметрИмяГруппыКонтекстноеМеню" id="495"/>
 													<ExtendedTooltip name="ПараметрИмяГруппыРасширеннаяПодсказка" id="496"/>
+													<SelectedItemsActionsPanel name="ПараметрИмяГруппыПанельДействийВыделенныхСтрок" id="996"/>
 												</InputField>
 												<InputField name="ПараметрНомерТелефона" id="320">
 													<DataPath>ПараметрНомерТелефона</DataPath>
@@ -2328,6 +2374,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 													<HorizontalStretch>true</HorizontalStretch>
 													<ContextMenu name="ПараметрНомерТелефонаКонтекстноеМеню" id="321"/>
 													<ExtendedTooltip name="ПараметрНомерТелефонаРасширеннаяПодсказка" id="322"/>
+													<SelectedItemsActionsPanel name="ПараметрНомерТелефонаПанельДействийВыделенныхСтрок" id="997"/>
 												</InputField>
 												<Button name="СоздатьГруппу" id="313">
 													<Type>UsualButton</Type>
@@ -2353,7 +2400,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 												</v8:item>
 											</ToolTip>
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
 											<Representation>StrongSeparation</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаИзменитьИмяГруппыРасширеннаяПодсказка" id="324"/>
@@ -2364,6 +2410,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 													<HorizontalStretch>true</HorizontalStretch>
 													<ContextMenu name="ПараметрИдГруппыКонтекстноеМеню" id="336"/>
 													<ExtendedTooltip name="ПараметрИдГруппыРасширеннаяПодсказка" id="337"/>
+													<SelectedItemsActionsPanel name="ПараметрИдГруппыПанельДействийВыделенныхСтрок" id="998"/>
 												</InputField>
 												<InputField name="ИмяГруппы" id="317">
 													<DataPath>ПараметрИмяГруппы</DataPath>
@@ -2371,6 +2418,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 													<HorizontalStretch>true</HorizontalStretch>
 													<ContextMenu name="ИмяГруппыКонтекстноеМеню" id="318"/>
 													<ExtendedTooltip name="ИмяГруппыРасширеннаяПодсказка" id="319"/>
+													<SelectedItemsActionsPanel name="ИмяГруппыПанельДействийВыделенныхСтрок" id="999"/>
 												</InputField>
 												<UsualGroup name="ГруппаИзменитьГруппуКнопки" id="713">
 													<Title>
@@ -2386,7 +2434,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 														</v8:item>
 													</ToolTip>
 													<Group>AlwaysHorizontal</Group>
-													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаИзменитьГруппуКнопкиРасширеннаяПодсказка" id="714"/>
@@ -2425,7 +2472,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 												</v8:item>
 											</ToolTip>
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
 											<Representation>StrongSeparation</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаПолучитьИнформациюоГруппеРасширеннаяПодсказка" id="339"/>
@@ -2436,6 +2482,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 													<HorizontalStretch>true</HorizontalStretch>
 													<ContextMenu name="ПараметрИдГруппы1КонтекстноеМеню" id="348"/>
 													<ExtendedTooltip name="ПараметрИдГруппы1РасширеннаяПодсказка" id="349"/>
+													<SelectedItemsActionsPanel name="ПараметрИдГруппы1ПанельДействийВыделенныхСтрок" id="1000"/>
 												</InputField>
 												<Button name="ПолучитьИнформациюОГруппе" id="345">
 													<Type>UsualButton</Type>
@@ -2455,7 +2502,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 												</v8:item>
 											</ToolTip>
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
 											<Representation>StrongSeparation</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаДобавитьУчастникаРасширеннаяПодсказка" id="351"/>
@@ -2466,6 +2512,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 													<HorizontalStretch>true</HorizontalStretch>
 													<ContextMenu name="ПараметрИдГруппы2КонтекстноеМеню" id="363"/>
 													<ExtendedTooltip name="ПараметрИдГруппы2РасширеннаяПодсказка" id="364"/>
+													<SelectedItemsActionsPanel name="ПараметрИдГруппы2ПанельДействийВыделенныхСтрок" id="1001"/>
 												</InputField>
 												<InputField name="ПараметрИдУчастника" id="359">
 													<DataPath>ПараметрИдУчастника</DataPath>
@@ -2473,6 +2520,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 													<HorizontalStretch>true</HorizontalStretch>
 													<ContextMenu name="ПараметрИдУчастникаКонтекстноеМеню" id="360"/>
 													<ExtendedTooltip name="ПараметрИдУчастникаРасширеннаяПодсказка" id="361"/>
+													<SelectedItemsActionsPanel name="ПараметрИдУчастникаПанельДействийВыделенныхСтрок" id="1002"/>
 												</InputField>
 												<UsualGroup name="ГруппаДобавитьУчастникаКнопки" id="633">
 													<Title>
@@ -2487,7 +2535,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 															<v8:content>Группа добавить участника кнопки</v8:content>
 														</v8:item>
 													</ToolTip>
-													<Behavior>Usual</Behavior>
+													<Group>HorizontalIfPossible</Group>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаДобавитьУчастникаКнопкиРасширеннаяПодсказка" id="634"/>
@@ -2524,7 +2572,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 														</v8:item>
 													</ToolTip>
 													<Group>Vertical</Group>
-													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаДобавитьАдминистратораКнопкиРасширеннаяПодсказка" id="636"/>
@@ -2563,7 +2610,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 												</v8:item>
 											</ToolTip>
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
 											<Representation>StrongSeparation</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаВыйтиРасширеннаяПодсказка" id="402"/>
@@ -2574,6 +2620,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 													<HorizontalStretch>true</HorizontalStretch>
 													<ContextMenu name="ПараметрИдГруппы6КонтекстноеМеню" id="406"/>
 													<ExtendedTooltip name="ПараметрИдГруппы6РасширеннаяПодсказка" id="407"/>
+													<SelectedItemsActionsPanel name="ПараметрИдГруппы6ПанельДействийВыделенныхСтрок" id="1003"/>
 												</InputField>
 												<Button name="ВыйтиИзГруппы" id="411">
 													<Type>UsualButton</Type>
@@ -2600,6 +2647,8 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 											<v8:content>Группа консоль группы</v8:content>
 										</v8:item>
 									</ToolTip>
+									<Group>HorizontalIfPossible</Group>
+									<Representation>WeakSeparation</Representation>
 									<ExtendedTooltip name="ГруппаКонсольГруппыРасширеннаяПодсказка" id="955"/>
 									<ChildItems>
 										<InputField name="КонсольГруппы" id="308">
@@ -2608,6 +2657,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 											<MultiLine>true</MultiLine>
 											<ContextMenu name="КонсольГруппыКонтекстноеМеню" id="309"/>
 											<ExtendedTooltip name="КонсольГруппыРасширеннаяПодсказка" id="310"/>
+											<SelectedItemsActionsPanel name="КонсольГруппыПанельДействийВыделенныхСтрок" id="1004"/>
 										</InputField>
 									</ChildItems>
 								</UsualGroup>
@@ -2626,7 +2676,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 									</ToolTip>
 									<Width>30</Width>
 									<Group>Vertical</Group>
-									<Behavior>Usual</Behavior>
 									<Representation>StrongSeparation</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаГруппыДокументацияРасширеннаяПодсказка" id="669"/>
@@ -2786,6 +2835,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 								</v8:item>
 							</ToolTip>
 							<Group>AlwaysHorizontal</Group>
+							<ScrollOnCompress>false</ScrollOnCompress>
 							<ExtendedTooltip name="СтатусыРасширеннаяПодсказка" id="774"/>
 							<ChildItems>
 								<Pages name="ГруппаСтатусыСтраницы" id="827">
@@ -2818,6 +2868,8 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 													<v8:content>Группа статусы страница текстовый</v8:content>
 												</v8:item>
 											</ToolTip>
+											<Group>Vertical</Group>
+											<ScrollOnCompress>false</ScrollOnCompress>
 											<ExtendedTooltip name="ГруппаСтатусыСтраницаТекстовыйРасширеннаяПодсказка" id="830"/>
 											<ChildItems>
 												<UsualGroup name="ГруппаСтатусыОтправитьТекстовыйСтатус" id="812">
@@ -2839,6 +2891,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 															<ContextMenu name="СтатусыТекстСообщенияКонтекстноеМеню" id="815"/>
 															<ExtendedTooltip name="СтатусыТекстСообщенияРасширеннаяПодсказка" id="816"/>
+															<SelectedItemsActionsPanel name="СтатусыТекстСообщенияПанельДействийВыделенныхСтрок" id="1005"/>
 														</InputField>
 														<InputField name="СтатусыЦветФонаСообщенияТекстовый" id="819">
 															<DataPath>СтатусыЦветФонаСообщения</DataPath>
@@ -2847,6 +2900,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 															<ContextMenu name="СтатусыЦветФонаСообщенияТекстовыйКонтекстноеМеню" id="820"/>
 															<ExtendedTooltip name="СтатусыЦветФонаСообщенияТекстовыйРасширеннаяПодсказка" id="821"/>
+															<SelectedItemsActionsPanel name="СтатусыЦветФонаСообщенияТекстовыйПанельДействийВыделенныхСтрок" id="1006"/>
 														</InputField>
 														<InputField name="СтатусыКонтакты" id="822">
 															<DataPath>СтатусыКонтакты</DataPath>
@@ -2855,6 +2909,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 															<ContextMenu name="СтатусыКонтактыКонтекстноеМеню" id="823"/>
 															<ExtendedTooltip name="СтатусыКонтактыРасширеннаяПодсказка" id="824"/>
+															<SelectedItemsActionsPanel name="СтатусыКонтактыПанельДействийВыделенныхСтрок" id="1007"/>
 														</InputField>
 														<Button name="ОтправитьТекстовыйСтатус" id="817">
 															<Type>UsualButton</Type>
@@ -2885,6 +2940,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 															<ContextMenu name="СтатусыСсылкаАудиоФайлКонтекстноеМеню" id="840"/>
 															<ExtendedTooltip name="СтатусыСсылкаАудиоФайлРасширеннаяПодсказка" id="841"/>
+															<SelectedItemsActionsPanel name="СтатусыСсылкаАудиоФайлПанельДействийВыделенныхСтрок" id="1008"/>
 														</InputField>
 														<InputField name="СтатусыЦветФонаСообщенияГолосовой" id="833">
 															<DataPath>СтатусыЦветФонаСообщения</DataPath>
@@ -2893,6 +2949,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 															<ContextMenu name="СтатусыЦветФонаСообщенияГолосовойКонтекстноеМеню" id="834"/>
 															<ExtendedTooltip name="СтатусыЦветФонаСообщенияГолосовойРасширеннаяПодсказка" id="835"/>
+															<SelectedItemsActionsPanel name="СтатусыЦветФонаСообщенияГолосовойПанельДействийВыделенныхСтрок" id="1009"/>
 														</InputField>
 														<InputField name="СтатусыКонтактыГолосовой" id="836">
 															<DataPath>СтатусыКонтакты</DataPath>
@@ -2901,6 +2958,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 															<ContextMenu name="СтатусыКонтактыГолосовойКонтекстноеМеню" id="837"/>
 															<ExtendedTooltip name="СтатусыКонтактыГолосовойРасширеннаяПодсказка" id="838"/>
+															<SelectedItemsActionsPanel name="СтатусыКонтактыГолосовойПанельДействийВыделенныхСтрок" id="1010"/>
 														</InputField>
 														<Button name="ОтправитьГолосовойСтатус" id="842">
 															<Type>UsualButton</Type>
@@ -2931,6 +2989,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 															<ContextMenu name="СтатусыТекстСообщенияМедиаКонтекстноеМеню" id="850"/>
 															<ExtendedTooltip name="СтатусыТекстСообщенияМедиаРасширеннаяПодсказка" id="851"/>
+															<SelectedItemsActionsPanel name="СтатусыТекстСообщенияМедиаПанельДействийВыделенныхСтрок" id="1011"/>
 														</InputField>
 														<InputField name="СтатусыСсылкаМедиаФайл" id="846">
 															<DataPath>СтатусыСсылкаМедиаФайл</DataPath>
@@ -2939,6 +2998,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 															<ContextMenu name="СтатусыСсылкаМедиаФайлКонтекстноеМеню" id="847"/>
 															<ExtendedTooltip name="СтатусыСсылкаМедиаФайлРасширеннаяПодсказка" id="848"/>
+															<SelectedItemsActionsPanel name="СтатусыСсылкаМедиаФайлПанельДействийВыделенныхСтрок" id="1012"/>
 														</InputField>
 														<InputField name="СтатусыКонтактыМедиа" id="852">
 															<DataPath>СтатусыКонтакты</DataPath>
@@ -2947,6 +3007,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 															<ContextMenu name="СтатусыКонтактыМедиаКонтекстноеМеню" id="853"/>
 															<ExtendedTooltip name="СтатусыКонтактыМедиаРасширеннаяПодсказка" id="854"/>
+															<SelectedItemsActionsPanel name="СтатусыКонтактыМедиаПанельДействийВыделенныхСтрок" id="1013"/>
 														</InputField>
 														<Button name="ОтправитьМедиаСтатус" id="855">
 															<Type>UsualButton</Type>
@@ -2977,6 +3038,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 													<ExtendedTooltip name="ГруппаСтатусыУдалитьСтатусРасширеннаяПодсказка" id="858"/>
 													<ChildItems>
 														<UsualGroup name="Группа5" id="911">
+															<Group>HorizontalIfPossible</Group>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="912"/>
@@ -3000,6 +3062,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 																	<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 																	<ContextMenu name="ПараметрИдСтатусаКонтекстноеМеню" id="860"/>
 																	<ExtendedTooltip name="ПараметрИдСтатусаРасширеннаяПодсказка" id="861"/>
+																	<SelectedItemsActionsPanel name="ПараметрИдСтатусаПанельДействийВыделенныхСтрок" id="1014"/>
 																</InputField>
 															</ChildItems>
 														</UsualGroup>
@@ -3028,6 +3091,8 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 													<v8:content>Группа статусы страница статистика</v8:content>
 												</v8:item>
 											</ToolTip>
+											<Group>Vertical</Group>
+											<ScrollOnCompress>false</ScrollOnCompress>
 											<ExtendedTooltip name="ГруппаСтатусыСтраницаСтатистикаРасширеннаяПодсказка" id="865"/>
 											<ChildItems>
 												<UsualGroup name="ГруппаСтатистикаПолучитьСтатистикуСтатуса" id="866">
@@ -3049,6 +3114,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 															<ContextMenu name="ПараметрИдСтатусаСтатистикаКонтекстноеМеню" id="869"/>
 															<ExtendedTooltip name="ПараметрИдСтатусаСтатистикаРасширеннаяПодсказка" id="870"/>
+															<SelectedItemsActionsPanel name="ПараметрИдСтатусаСтатистикаПанельДействийВыделенныхСтрок" id="1015"/>
 														</InputField>
 														<Button name="ПолучитьСтатистикуСтатуса" id="871">
 															<Type>UsualButton</Type>
@@ -3075,6 +3141,8 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 													<v8:content>Группа статусы страница история</v8:content>
 												</v8:item>
 											</ToolTip>
+											<Group>Vertical</Group>
+											<ScrollOnCompress>false</ScrollOnCompress>
 											<ExtendedTooltip name="ГруппаСтатусыСтраницаИсторияРасширеннаяПодсказка" id="874"/>
 											<ChildItems>
 												<UsualGroup name="ГруппаСтатистикаПолучитьВходящиеСтатусы" id="875">
@@ -3097,6 +3165,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 															<ContextMenu name="ПараметрКоличествоМинутКонтекстноеМеню" id="878"/>
 															<ExtendedTooltip name="ПараметрКоличествоМинутРасширеннаяПодсказка" id="879"/>
+															<SelectedItemsActionsPanel name="ПараметрКоличествоМинутПанельДействийВыделенныхСтрок" id="1016"/>
 														</InputField>
 														<Button name="ПолучитьВходящиеСтатусы" id="880">
 															<Type>UsualButton</Type>
@@ -3128,6 +3197,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 															<ContextMenu name="ПараметрКоличествоМинутИсходящиеКонтекстноеМеню" id="885"/>
 															<ExtendedTooltip name="ПараметрКоличествоМинутИсходящиеРасширеннаяПодсказка" id="886"/>
+															<SelectedItemsActionsPanel name="ПараметрКоличествоМинутИсходящиеПанельДействийВыделенныхСтрок" id="1017"/>
 														</InputField>
 														<Button name="ПолучитьИсходящиеСтатусы" id="887">
 															<Type>UsualButton</Type>
@@ -3150,6 +3220,8 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 											<v8:content>Ответ</v8:content>
 										</v8:item>
 									</Title>
+									<Group>HorizontalIfPossible</Group>
+									<Representation>WeakSeparation</Representation>
 									<ExtendedTooltip name="ГруппаСтатусыОтветРасширеннаяПодсказка" id="826"/>
 									<ChildItems>
 										<InputField name="КонсольСтатусы" id="809">
@@ -3164,6 +3236,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 											<MultiLine>true</MultiLine>
 											<ContextMenu name="КонсольСтатусыКонтекстноеМеню" id="810"/>
 											<ExtendedTooltip name="КонсольСтатусыРасширеннаяПодсказка" id="811"/>
+											<SelectedItemsActionsPanel name="КонсольСтатусыПанельДействийВыделенныхСтрок" id="1018"/>
 										</InputField>
 									</ChildItems>
 								</UsualGroup>
@@ -3205,6 +3278,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 												</v8:item>
 											</Title>
 											<Group>Vertical</Group>
+											<Representation>WeakSeparation</Representation>
 											<ExtendedTooltip name="ГруппаСтатусыСтатусыРасширеннаяПодсказка" id="793"/>
 											<ChildItems>
 												<LabelDecoration name="СсылкаОтправитьТекстовыйСтатус" id="780">
@@ -3278,6 +3352,8 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 													<v8:content>Группа статусы статистика</v8:content>
 												</v8:item>
 											</ToolTip>
+											<Group>HorizontalIfPossible</Group>
+											<Representation>WeakSeparation</Representation>
 											<ExtendedTooltip name="ГруппаСтатусыСтатистикаРасширеннаяПодсказка" id="795"/>
 											<ChildItems>
 												<LabelDecoration name="СсылкаПолучитьСтатистикуСтатуса" id="796">
@@ -3310,6 +3386,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 												</v8:item>
 											</ToolTip>
 											<Group>Vertical</Group>
+											<Representation>WeakSeparation</Representation>
 											<ExtendedTooltip name="ГруппаСтатусыИсторияРасширеннаяПодсказка" id="800"/>
 											<ChildItems>
 												<LabelDecoration name="СсылкаПолучитьВходящиеСтатусы" id="801">
@@ -3360,6 +3437,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 								</v8:item>
 							</ToolTip>
 							<Group>AlwaysHorizontal</Group>
+							<ScrollOnCompress>false</ScrollOnCompress>
 							<ExtendedTooltip name="ОтметкаПрочтенияРасширеннаяПодсказка" id="414"/>
 							<ChildItems>
 								<UsualGroup name="ГруппаОтметкаПрочтенияЗапросы" id="415">
@@ -3371,7 +3449,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 									</ToolTip>
 									<Width>30</Width>
 									<Group>Vertical</Group>
-									<Behavior>Usual</Behavior>
 									<Representation>StrongSeparation</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаОтметкаПрочтенияЗапросыРасширеннаяПодсказка" id="416"/>
@@ -3384,7 +3461,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 												</v8:item>
 											</ToolTip>
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаОтметитьЧатПрочитаннымРасширеннаяПодсказка" id="425"/>
@@ -3395,6 +3471,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 													<HorizontalStretch>true</HorizontalStretch>
 													<ContextMenu name="ПараметрИдЧатаКонтекстноеМеню" id="434"/>
 													<ExtendedTooltip name="ПараметрИдЧатаРасширеннаяПодсказка" id="435"/>
+													<SelectedItemsActionsPanel name="ПараметрИдЧатаПанельДействийВыделенныхСтрок" id="1019"/>
 												</InputField>
 												<InputField name="ПараметрИдСообщения" id="436">
 													<DataPath>ПараметрИдСообщения</DataPath>
@@ -3402,6 +3479,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 													<HorizontalStretch>true</HorizontalStretch>
 													<ContextMenu name="ПараметрИдСообщенияКонтекстноеМеню" id="437"/>
 													<ExtendedTooltip name="ПараметрИдСообщенияРасширеннаяПодсказка" id="438"/>
+													<SelectedItemsActionsPanel name="ПараметрИдСообщенияПанельДействийВыделенныхСтрок" id="1020"/>
 												</InputField>
 												<Button name="ОтметитьЧатПрочитанным" id="431">
 													<Type>UsualButton</Type>
@@ -3428,6 +3506,8 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 											<v8:content>Группа консоль отметки прочтения</v8:content>
 										</v8:item>
 									</ToolTip>
+									<Group>HorizontalIfPossible</Group>
+									<Representation>WeakSeparation</Representation>
 									<ExtendedTooltip name="ГруппаКонсольОтметкиПрочтенияРасширеннаяПодсказка" id="957"/>
 									<ChildItems>
 										<InputField name="КонсольОтметкиПрочтения" id="421">
@@ -3436,6 +3516,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 											<MultiLine>true</MultiLine>
 											<ContextMenu name="КонсольОтметкиПрочтенияКонтекстноеМеню" id="422"/>
 											<ExtendedTooltip name="КонсольОтметкиПрочтенияРасширеннаяПодсказка" id="423"/>
+											<SelectedItemsActionsPanel name="КонсольОтметкиПрочтенияПанельДействийВыделенныхСтрок" id="1021"/>
 										</InputField>
 									</ChildItems>
 								</UsualGroup>
@@ -3454,7 +3535,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 									</ToolTip>
 									<Width>30</Width>
 									<Group>Vertical</Group>
-									<Behavior>Usual</Behavior>
 									<Representation>StrongSeparation</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаОтметкаПрочтенияДокументацияРасширеннаяПодсказка" id="701"/>
@@ -3502,6 +3582,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 								</v8:item>
 							</ToolTip>
 							<Group>AlwaysHorizontal</Group>
+							<ScrollOnCompress>false</ScrollOnCompress>
 							<ExtendedTooltip name="УстройствоРасширеннаяПодсказка" id="440"/>
 							<ChildItems>
 								<UsualGroup name="ГруппаУстройствоЗапросы" id="441">
@@ -3513,7 +3594,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 									</ToolTip>
 									<Width>30</Width>
 									<Group>Vertical</Group>
-									<Behavior>Usual</Behavior>
 									<Representation>StrongSeparation</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаУстройствоЗапросыРасширеннаяПодсказка" id="442"/>
@@ -3541,6 +3621,8 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 											<v8:content>Группа консоль устройства</v8:content>
 										</v8:item>
 									</ToolTip>
+									<Group>HorizontalIfPossible</Group>
+									<Representation>WeakSeparation</Representation>
 									<ExtendedTooltip name="ГруппаКонсольУстройстваРасширеннаяПодсказка" id="959"/>
 									<ChildItems>
 										<InputField name="КонсольУстройства" id="447">
@@ -3549,6 +3631,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 											<MultiLine>true</MultiLine>
 											<ContextMenu name="КонсольУстройстваКонтекстноеМеню" id="448"/>
 											<ExtendedTooltip name="КонсольУстройстваРасширеннаяПодсказка" id="449"/>
+											<SelectedItemsActionsPanel name="КонсольУстройстваПанельДействийВыделенныхСтрок" id="1022"/>
 										</InputField>
 									</ChildItems>
 								</UsualGroup>
@@ -3567,7 +3650,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 									</ToolTip>
 									<Width>30</Width>
 									<Group>Vertical</Group>
-									<Behavior>Usual</Behavior>
 									<Representation>StrongSeparation</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаУстройствоДокументацияРасширеннаяПодсказка" id="716"/>
@@ -3615,6 +3697,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 								</v8:item>
 							</ToolTip>
 							<Group>AlwaysHorizontal</Group>
+							<ScrollOnCompress>false</ScrollOnCompress>
 							<ExtendedTooltip name="СервисныеМетодыРасширеннаяПодсказка" id="453"/>
 							<ChildItems>
 								<UsualGroup name="ГруппаСервисныеМетодыЗапросы" id="454">
@@ -3632,7 +3715,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 									</ToolTip>
 									<Width>30</Width>
 									<Group>Vertical</Group>
-									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаСервисныеМетодыЗапросыРасширеннаяПодсказка" id="455"/>
@@ -3645,7 +3727,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 												</v8:item>
 											</ToolTip>
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
 											<Representation>StrongSeparation</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаПроверитьНаличиеВатсапРасширеннаяПодсказка" id="457"/>
@@ -3656,6 +3737,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 													<HorizontalStretch>true</HorizontalStretch>
 													<ContextMenu name="ПараметрНомерТелефона1КонтекстноеМеню" id="472"/>
 													<ExtendedTooltip name="ПараметрНомерТелефона1РасширеннаяПодсказка" id="473"/>
+													<SelectedItemsActionsPanel name="ПараметрНомерТелефона1ПанельДействийВыделенныхСтрок" id="1023"/>
 												</InputField>
 												<Button name="ПроверитьНаличиеWhatsApp" id="469">
 													<Type>UsualButton</Type>
@@ -3681,7 +3763,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 												</v8:item>
 											</ToolTip>
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
 											<Representation>StrongSeparation</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаПолучитьАватарКонтактаРасширеннаяПодсказка" id="475"/>
@@ -3692,6 +3773,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 													<HorizontalStretch>true</HorizontalStretch>
 													<ContextMenu name="ПараметрИдЧата1КонтекстноеМеню" id="484"/>
 													<ExtendedTooltip name="ПараметрИдЧата1РасширеннаяПодсказка" id="485"/>
+													<SelectedItemsActionsPanel name="ПараметрИдЧата1ПанельДействийВыделенныхСтрок" id="1024"/>
 												</InputField>
 												<Button name="ПолучитьИнфоКонтакта" id="628">
 													<Type>UsualButton</Type>
@@ -3725,7 +3807,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 												</v8:item>
 											</ToolTip>
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
 											<Representation>StrongSeparation</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаПолучитьКонтактыРасширеннаяПодсказка" id="487"/>
@@ -3754,7 +3835,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 												</v8:item>
 											</ToolTip>
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
 											<Representation>StrongSeparation</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаУдалитьСообщениеРасширеннаяПодсказка" id="555"/>
@@ -3765,6 +3845,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 													<HorizontalStretch>true</HorizontalStretch>
 													<ContextMenu name="ПараметрИдЧата3КонтекстноеМеню" id="557"/>
 													<ExtendedTooltip name="ПараметрИдЧата3РасширеннаяПодсказка" id="558"/>
+													<SelectedItemsActionsPanel name="ПараметрИдЧата3ПанельДействийВыделенныхСтрок" id="1025"/>
 												</InputField>
 												<InputField name="ПараметрИдСообщения1" id="559">
 													<DataPath>ПараметрИдСообщения</DataPath>
@@ -3772,6 +3853,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 													<HorizontalStretch>true</HorizontalStretch>
 													<ContextMenu name="ПараметрИдСообщения1КонтекстноеМеню" id="560"/>
 													<ExtendedTooltip name="ПараметрИдСообщения1РасширеннаяПодсказка" id="561"/>
+													<SelectedItemsActionsPanel name="ПараметрИдСообщения1ПанельДействийВыделенныхСтрок" id="1026"/>
 												</InputField>
 												<Button name="УдалитьСообщение" id="562">
 													<Type>UsualButton</Type>
@@ -3797,7 +3879,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 												</v8:item>
 											</ToolTip>
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
 											<Representation>StrongSeparation</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаАрхивированиеЧатаРасширеннаяПодсказка" id="565"/>
@@ -3808,6 +3889,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 													<HorizontalStretch>true</HorizontalStretch>
 													<ContextMenu name="ПараметрИдЧата4КонтекстноеМеню" id="567"/>
 													<ExtendedTooltip name="ПараметрИдЧата4РасширеннаяПодсказка" id="568"/>
+													<SelectedItemsActionsPanel name="ПараметрИдЧата4ПанельДействийВыделенныхСтрок" id="1027"/>
 												</InputField>
 												<Button name="АрхивироватьЧат" id="571">
 													<Type>UsualButton</Type>
@@ -3841,7 +3923,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 												</v8:item>
 											</ToolTip>
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
 											<Representation>StrongSeparation</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаИсчезающиеИхображенияРасширеннаяПодсказка" id="616"/>
@@ -3852,6 +3933,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 													<HorizontalStretch>true</HorizontalStretch>
 													<ContextMenu name="ПараметрИдЧата5КонтекстноеМеню" id="623"/>
 													<ExtendedTooltip name="ПараметрИдЧата5РасширеннаяПодсказка" id="624"/>
+													<SelectedItemsActionsPanel name="ПараметрИдЧата5ПанельДействийВыделенныхСтрок" id="1028"/>
 												</InputField>
 												<InputField name="ПараметрВремяЖизни" id="617">
 													<DataPath>ПараметрВремяЖизни</DataPath>
@@ -3866,6 +3948,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 													<HorizontalStretch>true</HorizontalStretch>
 													<ContextMenu name="ПараметрВремяЖизниКонтекстноеМеню" id="618"/>
 													<ExtendedTooltip name="ПараметрВремяЖизниРасширеннаяПодсказка" id="619"/>
+													<SelectedItemsActionsPanel name="ПараметрВремяЖизниПанельДействийВыделенныхСтрок" id="1029"/>
 												</InputField>
 												<Button name="УстановитьИсчезающиеСообщения" id="620">
 													<Type>UsualButton</Type>
@@ -3892,6 +3975,8 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 											<v8:content>Группа консоль сервисные методы</v8:content>
 										</v8:item>
 									</ToolTip>
+									<Group>HorizontalIfPossible</Group>
+									<Representation>WeakSeparation</Representation>
 									<ExtendedTooltip name="ГруппаКонсольСервисныеМетодыРасширеннаяПодсказка" id="961"/>
 									<ChildItems>
 										<InputField name="КонсольСервисныеМетоды" id="466">
@@ -3900,6 +3985,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 											<MultiLine>true</MultiLine>
 											<ContextMenu name="КонсольСервисныеМетодыКонтекстноеМеню" id="467"/>
 											<ExtendedTooltip name="КонсольСервисныеМетодыРасширеннаяПодсказка" id="468"/>
+											<SelectedItemsActionsPanel name="КонсольСервисныеМетодыПанельДействийВыделенныхСтрок" id="1030"/>
 										</InputField>
 									</ChildItems>
 								</UsualGroup>
@@ -3918,7 +4004,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 									</ToolTip>
 									<Width>30</Width>
 									<Group>Vertical</Group>
-									<Behavior>Usual</Behavior>
 									<Representation>StrongSeparation</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="СервисныеМетодыДокументацияРасширеннаяПодсказка" id="671"/>
@@ -4068,7 +4153,6 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 					<Width>130</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<Group>AlwaysHorizontal</Group>
-					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<BackColor>style:ToolTipBackColor</BackColor>
@@ -4095,6 +4179,7 @@ api.com/docs/api/receiving/technology-htt</v8:content>
 							<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
 							<ContextMenu name="СтатусПроверкиКонтекстноеМеню" id="170"/>
 							<ExtendedTooltip name="СтатусПроверкиРасширеннаяПодсказка" id="171"/>
+							<SelectedItemsActionsPanel name="СтатусПроверкиПанельДействийВыделенныхСтрок" id="1031"/>
 						</LabelField>
 						<LabelDecoration name="ЛичныйКабинетGREENAPI" id="934">
 							<Font ref="style:NormalTextFont" height="12" kind="StyleItem" scale="100"/>

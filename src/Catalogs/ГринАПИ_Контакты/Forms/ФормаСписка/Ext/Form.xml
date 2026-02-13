@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>Vertical</Group>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
 			<Button name="ФормаПодобратьКонтактыИзWhatsApp" id="25">
@@ -25,6 +27,7 @@
 			</Title>
 			<VerticalStretch>false</VerticalStretch>
 			<Group>Vertical</Group>
+			<Representation>WeakSeparation</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
 		</UsualGroup>
@@ -32,7 +35,7 @@
 			<Representation>List</Representation>
 			<CommandBarLocation>None</CommandBarLocation>
 			<DefaultItem>true</DefaultItem>
-			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<RowSelectionMode>Cell</RowSelectionMode>
 			<InitialTreeView>ExpandTopLevel</InitialTreeView>
 			<EnableStartDrag>true</EnableStartDrag>
 			<DataPath>Список</DataPath>
@@ -81,12 +84,14 @@
 				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="14"/>
 				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
 			</SearchControlAddition>
+			<SelectedItemsActionsPanel name="СписокПанельДействийВыделенныхСтрок" id="27"/>
 			<ChildItems>
 				<LabelField name="Наименование" id="16">
 					<DataPath>Список.Description</DataPath>
 					<DefaultItem>true</DefaultItem>
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="17"/>
 					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="18"/>
+					<SelectedItemsActionsPanel name="НаименованиеПанельДействийВыделенныхСтрок" id="28"/>
 				</LabelField>
 				<LabelField name="НомерТелефона" id="22">
 					<DataPath>Список.НомерТелефона</DataPath>
@@ -98,6 +103,7 @@
 					</Format>
 					<ContextMenu name="НомерТелефонаКонтекстноеМеню" id="23"/>
 					<ExtendedTooltip name="НомерТелефонаРасширеннаяПодсказка" id="24"/>
+					<SelectedItemsActionsPanel name="НомерТелефонаПанельДействийВыделенныхСтрок" id="29"/>
 				</LabelField>
 			</ChildItems>
 		</Table>
